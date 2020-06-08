@@ -1,0 +1,874 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/* ! main Content */
+
+.mainContentContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/main-Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav img {
+    width: 150px;
+
+}
+
+nav {
+    height: 10vh;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #44593a;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #8bb379;
+    cursor: pointer;
+}
+
+.trigram {
+    font-size: 1em;
+    color: #44593a;
+    display: none;
+}
+
+.trigram:hover {
+    color: #8bb379;
+    cursor: pointer;
+}
+
+/* !jumbotron */
+
+.containerJumbotron {
+    width: 70%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.travelPhotographer {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-style: oblique;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #434b43;
+    letter-spacing: 4px;
+}
+
+.seeing {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    font-style: oblique;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #cad1ca;
+    letter-spacing: 4px;
+
+}
+
+.btnMood {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: #cad1ca;
+    border: #cad1ca solid 1px;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #44593a;
+    transition: .5s ease;
+}
+
+.btnMood:hover {
+
+    cursor: pointer;
+    background-color: #cad1ca;
+    color: #44593a;
+
+}
+
+.containerJumbotron p {
+    opacity: 0;
+    animation-name: jumbotron;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes jumbotron {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* !albums */
+
+.albums {
+    top: 10vh;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+}
+
+.album p {
+    text-align: center;
+    color: #44593a;
+}
+
+.album {
+    width: 30%;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    transition: .2s;
+}
+
+.img1 {
+    background-image: url(imgs/italy1.jpg);
+}
+
+.img1-transition2 {
+    background-image: url(imgs/italy2.jpg);
+}
+
+.img1-transition3 {
+    background-image: url(imgs/italy3.jpg);
+}
+
+.img1-transition4 {
+    background-image: url(imgs/italy4.jpg);
+}
+
+.img2 {
+    background-image: url(imgs/germany1.jpg);
+}
+
+.img2-transition2 {
+    background-image: url(imgs/germany2.jpg);
+}
+
+.img2-transition3 {
+    background-image: url(imgs/germany3.jpg);
+}
+
+.img2-transition4 {
+    background-image: url(imgs/germany4.jpg);
+}
+
+.img3 {
+    background-image: url(imgs/usa1.jpg);
+}
+
+.img3-transition2 {
+    background-image: url(imgs/usa2.jpg);
+}
+
+.img3-transition3 {
+    background-image: url(imgs/usa3.jpg);
+}
+
+.img3-transition4 {
+    background-image: url(imgs/usa4.jpg);
+}
+
+.albumNo {
+    padding: 10px;
+    font-size: .7em;
+}
+
+.country {
+    padding: 10px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+/* !section */
+
+.section {
+    position: relative;
+    top: 20vh;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #44593a;
+    /* height: 50vh; */
+}
+
+.hello {
+    position: relative;
+    padding: 75px 0;
+    left: 10%;
+    top: 20%;
+    transform: translateX(30%);
+    opacity: 0;
+    transition: all 2s ease 1s;
+    color: #cad1ca;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.helloTransition {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.sectionText {
+    width: 70%;
+    padding-bottom: 75px;
+    position: relative;
+    top: 45%;
+    left: 25%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 2s ease 1s;
+    text-align: justify;
+    color: #cad1ca;
+    font-size: 1em;
+    line-height: 1;
+    letter-spacing: 1.5px;
+}
+
+.sectionTextTransition {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.mainImg {
+    background-image: url(imgs/graytrail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    width: 100%;
+    height: 80vh;
+}
+
+/* !contact */
+
+.contactContainer {
+    padding: 100px 0;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.contact {
+    width: 50%;
+}
+
+.contact #contact {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #44593a;
+}
+
+
+.contact #jake {
+    font-size: 1.5em;
+    font-style: oblique;
+    color: #44593a;
+    margin-bottom: 20px;
+}
+
+.contact hr {
+    width: 80%;
+    position: relative;
+    left: -10%;
+}
+
+.social {
+    margin: 10px 0;
+}
+
+.social a {
+    text-decoration: none;
+    color: #44593a;
+}
+
+.contact img {
+    width: 13px;
+}
+
+form {
+    width: 50%;
+    text-align: center;
+}
+
+input[type=text],
+input[type=submit],
+input[type=email] {
+    width: 80%;
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid #44593a;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+form textarea {
+    width: 80%;
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid #44593a;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.submit {
+    background-color: #44593a;
+    color: #44593a;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: #44593a;
+    cursor: pointer;
+    color: #f2f2f2;
+    text-transform: uppercase;
+}
+
+/* !footer */
+
+footer {
+
+    width: 100%;
+    background-color: #44593a;
+    padding: 40px;
+    align-items: center;
+}
+
+.footerText {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.footerText p {
+    color: #f2f2f2;
+    letter-spacing: 2px;
+}
+
+.socialMed {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialMed img {
+    width: 20px;
+    background-color: #f2f2f2;
+}
+
+/* !portfolio */
+/* !nav main content */
+.portfolio {
+    height: 70vh;
+}
+
+.portfolio .travelPhotographer {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 3.5em;
+    letter-spacing: 8px;
+}
+
+/* !gallery */
+
+.portfolioContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 1000000;
+}
+
+.portfolioGallery {
+    padding: 25px 0;
+
+}
+
+.portfolioCountry {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolioCountry .no {
+    text-decoration: underline;
+    padding-right: 15px;
+    font-style: normal;
+    font-size: 1em;
+    color: #44593a;
+}
+
+.portfolioCountry .pCountry {
+    font-size: 2em;
+    font-style: oblique;
+    letter-spacing: 5px;
+    color: #44593a;
+}
+
+.arrowPortfolio {
+    font-size: 2em;
+    font-style: oblique;
+    letter-spacing: 5px;
+    color: #44593a;
+    text-decoration: none;
+}
+
+.arrowPortfolio:hover {
+    cursor: pointer;
+
+}
+
+.portfolioGallery img {
+    width: 100%;
+    height: 70vh;
+}
+
+.portfolioJumbotron {
+    height: 50vh;
+}
+
+/* !clients */
+
+.clientContainer {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7px;
+    padding: 50px 0;
+}
+
+.client {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    transition: .3s;
+    position: relative;
+
+}
+
+.client1 {
+    background-image: url(imgs/bike1.jpg);
+}
+
+.client1st:hover::after {
+    content: "Motor Cycle Club, Philippines May 2018";
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 2px;
+    background-color: #f2f2f2;
+    opacity: .5;
+    font-size: 1.5em;
+    transition: all 1s;
+    animation: clients .5s forwards;
+}
+
+.client2nd:hover::after {
+    content: "Yacht Club, Manila October 2019";
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 2px;
+    background-color: #f2f2f2;
+    opacity: .5;
+    font-size: 1.5em;
+    transition: all 1s;
+    animation: clients .5s forwards;
+}
+
+.client3rd:hover::after {
+    content: "Sports Car Manila, Manila December 2019";
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 2px;
+    background-color: #f2f2f2;
+    opacity: .5;
+    font-size: 1.5em;
+    transition: all 1s;
+    animation: clients .5s forwards;
+}
+
+
+@keyframes clients {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: .8;
+    }
+}
+
+.client1Transition2 {
+    background-image: url(imgs/bike2.jpg);
+}
+
+.client1Transition3 {
+    background-image: url(imgs/bike3.jpg);
+}
+
+.client1Transition4 {
+    background-image: url(imgs/bike4.jpg);
+}
+
+.client2 {
+    background-image: url(imgs/yacht1.jpg);
+}
+
+.client2Transition2 {
+    background-image: url(imgs/yacht2.jpg);
+}
+
+.client2Transition3 {
+    background-image: url(imgs/yacht3.jpg);
+}
+
+.client2Transition4 {
+    background-image: url(imgs/yacht4.jpg);
+}
+
+.client3 {
+    background-image: url(imgs/car1.jpg);
+}
+
+.client3Transition2 {
+    background-image: url(imgs/car2.jpg);
+}
+
+.client3Transition3 {
+    background-image: url(imgs/car3.jpg);
+}
+
+.client3Transition4 {
+    background-image: url(imgs/car4.jpg);
+}
+
+/* !videos */
+
+.mainvideo {
+    margin: 0 auto;
+    width: 70%;
+    padding: 50px 0;
+}
+
+.mainvideo iframe {
+    width: 100%;
+    height: 70vh;
+}
+
+.videoSearch {
+    border-bottom: 1px solid #44593a;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #44593a;
+    position: relative;
+}
+
+.videoSearch .searchBarVideo {
+    width: 50%;
+}
+
+.videoSearch .searchBarVideo input {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+}
+
+.par {
+    width: 50%;
+    position: relative;
+}
+
+.videoSearch p {
+    position: relative;
+    font-size: 1.2em;
+    text-align: center;
+    float: right;
+    z-index: 100000;
+}
+
+.videoSearch p:hover {
+    cursor: pointer;
+}
+
+.videoSearch p span {
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.ulVideo {
+
+    position: absolute;
+    right: 0;
+    top: 2.5em;
+    font-size: 1.2em;
+    transform: translateY(-100%);
+    transition: all 1s ease;
+    opacity: 0;
+    padding-right: 25px;
+}
+
+.ulTrans {
+    transform: translateY(0%);
+    opacity: 1;
+
+}
+
+.videoSearch ul li {
+    padding: 5px 10px;
+    list-style: none;
+    display: block;
+    position: relative;
+    left: 0;
+    background-color: #f2f2f2;
+}
+
+/* !videolist */
+
+.videoList {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-gap: 10px; */
+}
+
+.videoList .vid {
+    width: 30%;
+}
+
+.videoList .vid img {
+    width: 100%;
+
+}
+
+/* !media queries */
+
+@media (max-width:1280px) {
+
+    nav,
+    .albums,
+    .section,
+    .contactContainer,
+    .containerJumbotron,
+    .portfolioContainer,
+    .videoSearch,
+    .videoList,
+    .clientContainer,
+    .mainvideo {
+        width: 80%;
+    }
+}
+
+@media (max-width:1000px) {
+
+    nav,
+    .albums,
+    .section,
+    .contactContainer,
+    .containerJumbotron,
+    .portfolioContainer,
+    .videoSearch,
+    .videoList,
+    .clientContainer,
+    .mainvideo {
+        width: 90%;
+    }
+}
+
+@media (max-width:900px) {
+
+    nav,
+    .albums,
+    .section,
+    .contactContainer,
+    .containerJumbotron,
+    .portfolioContainer,
+    .videoSearch,
+    .videoList,
+    .clientContainer,
+    .mainvideo {
+        width: 98%;
+    }
+}
+
+@media (max-width:680px) {
+
+    .albums,
+    .contactContainer,
+    .videoList,
+    .clientContainer {
+        display: block;
+    }
+
+    .album,
+    .contact,
+    .contactContainer form,
+    .video1,
+    .videoList .vid,
+    .mainvideo,
+    .clientContainer .client,
+    .containerJumbotron {
+        width: 100%;
+    }
+
+    .contact,
+    .contact hr {
+        text-align: center;
+
+    }
+
+    .contact hr {
+        display: none;
+    }
+
+    .searchBarVideo span {
+        display: none;
+    }
+
+    .clientContainer .client {
+        margin-top: 15px;
+    }
+
+    .travelPhotographer {
+        font-size: 1em;
+    }
+
+    .seeing {
+        font-size: 1.5em;
+    }
+
+    .btnMood {
+        font-size: .9em;
+    }
+
+    .trigram {
+        display: block;
+        padding: 3px 7px;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        background-color: #f2f2f2;
+        top: 10vh;
+        text-align: center;
+        z-index: 1000000;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 1s ease;
+    }
+
+    nav ul li {
+        padding: 20px 0;
+    }
+
+    .navUlTransition {
+        transform: translateX(0%);
+    }
+
+
+}

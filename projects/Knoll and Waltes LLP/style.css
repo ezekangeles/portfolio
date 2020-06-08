@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* !navigation */
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #f2f2f2;
+    z-index: 100000;
+    background-color: #fff;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    width: 70%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navIcon {
+    color: #aca3a3;
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    line-height: 10vh;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9em;
+    color: #aca3a3;
+    padding: 0 17px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #aca3a3;
+    color: #fff;
+}
+
+/* !Home Image */
+
+.buildingImg {
+    position: relative;
+    top: 10vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/building.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .5s ease;
+
+}
+
+.buildingText {
+    width: 40%;
+    background-color: rgba(49, 81, 141, .7);
+    height: 100vh;
+    z-index: 500;
+    position: relative;
+}
+
+.buildingText h1 span {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.buildingText h1 {
+    color: #fff;
+    position: relative;
+    left: 40%;
+    top: 40%;
+    transform: translateY(-50%);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    z-index: 1000;
+    width: 60%;
+}
+
+.buildingText h1 span.law {
+    font-size: 1.5em;
+}
+
+.buildingText h4 {
+    letter-spacing: 3px;
+    font-size: 1.3em;
+    color: #fff;
+    position: relative;
+    left: 40%;
+    top: 35%;
+    transform: translateY(-40%);
+    width: 50%;
+}
+
+
+/* !practice area */
+.practiceArea {
+    width: 100%;
+    z-index: 2000;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+.practiceAreaHeader {
+    position: relative;
+    width: 40%;
+    background-color: rgb(227, 235, 250);
+}
+
+.practiceAreaHeader h1 {
+    position: relative;
+    top: 30%;
+    left: 40%;
+    transform: translate(20%, -40%);
+    width: 50%;
+    text-align: center;
+    color: rgb(49, 81, 141);
+
+}
+
+.practiceAreaHeader h1 span.practice {
+    font-size: 2em;
+}
+
+.practiceAreaHeader h1 span.area {
+    font-size: 1.5em;
+}
+
+.practiceAreaList {
+    width: 60%;
+    /* position: relative;
+    left: 10%; */
+    padding: 30px;
+
+}
+
+.practiceAreaList ul {
+
+    padding: 500px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    padding: 30px;
+
+}
+
+.practiceAreaList ul li {
+    width: 100%;
+    list-style-type: square;
+    margin-left: 15px;
+    color: rgb(49, 81, 141);
+}
+
+.practiceAreaList ul li h4 {
+    font-size: 1.1em;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+
+.practiceAreaList ul li p {
+    font-size: .9em;
+    letter-spacing: 3px;
+}
+
+/* !vision */
+.visionContainer {
+    width: 100%;
+    background-color: rgb(49, 81, 141);
+    position: relative;
+    top: 10vh;
+    padding: 25px 0;
+}
+
+.vision {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    color: rgb(179, 205, 253);
+}
+
+.vision h1 {
+    padding: 50px;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+}
+
+.vision p {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.vision p.bot {
+    padding-bottom: 100px;
+}
+
+/* ?https://www.wix.com/website-template/view/html/1723?utm_source=freewebsitetemplates&utm_medium=template_banner&utm_term=design&utm_content=ma_html_fwt_temp_1_1_knollwalters&utm_campaign=ma_fwt&experiment_id=cpa_fwt_temp_1_1_knollwalters1723 */
+
+
+/* !attorney */
+
+
+
+.attorneyContainer {
+    position: relative;
+    top: 10vh;
+    background-color: rgb(227, 235, 250);
+    padding-bottom: 60px;
+}
+
+.attorneyContainer h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: rgb(49, 81, 141);
+}
+
+.attorney img {
+    width: 200px;
+    height: 240px;
+}
+
+.attorneys {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.attorney .name {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.attorneys p {
+    color: rgb(49, 81, 141);
+    padding: 8px;
+}
+
+/* !contact */
+
+.contactUsContainer {
+    position: relative;
+    top: 10vh;
+    background-image: url(img/glass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactUsContainerTitle {
+    background-color: rgba(49, 81, 141, .8);
+    width: 40%;
+    position: relative;
+    left: 0;
+}
+
+.contactUsContainerTitle p {
+    color: rgb(244, 247, 253);
+    position: absolute;
+    right: 10%;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 2em;
+    margin-top: 80px;
+}
+
+.address {
+    padding-top: 80px;
+    width: 60%;
+    position: relative;
+    right: 100;
+    color: rgb(244, 247, 253);
+    background-color: rgba(49, 81, 141, .5);
+}
+
+.address p {
+    margin-left: 30px;
+}
+
+/* form span {
+    margin-left: 30px;
+} */
+
+.add {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.inq {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 70%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 80px;
+
+}
+
+.firstForm {
+    /* padding: 10px 0 10px 30px; */
+    position: relative;
+    width: 50%;
+}
+
+/* .firstForm span {
+    padding: 100px 0 10px 30px;
+} */
+
+.firstForm input {
+    margin: 3px 0;
+    align-items: center;
+    width: 90%;
+    padding: 3px;
+    border: none;
+}
+
+.messageText {
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    width: 100%;
+}
+
+.message {
+    position: absolute;
+    top: 12%;
+    left: 100%;
+    width: 90%;
+    height: 57%;
+    padding: 8px;
+}
+
+#submit {
+    background-color: rgba(49, 81, 141, 1);
+    border: 1px solid #f2f2f2;
+    font-size: 15px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    width: 190%;
+}
+
+footer {
+    position: relative;
+    top: 10vh;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(227, 235, 250)
+}
+
+/* !media query */
+
+@media (max-width: 1580px) {
+    nav ul {
+        width: 60%;
+    }
+
+    .buildingText h1 span {
+        font-size: 1.8em;
+    }
+
+    .buildingText h1 span.law {
+        font-size: 1.4em
+    }
+
+    .buildingText h4 {
+        font-size: 1.1em;
+    }
+
+}
+
+@media (max-width: 1320px) {
+    .container {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+
+    .buildingText h1 {
+        left: 30%;
+    }
+
+    .buildingText h4 {
+        left: 30%;
+    }
+
+    .practiceAreaHeader h1 {
+        top: 30%;
+        left: 35%;
+        transform: translate(20%, -40%);
+    }
+}
+
+@media (max-width: 1220px) {
+    nav ul {
+        width: 60%;
+    }
+
+    .buildingText h1 {
+        left: 30%;
+        font-size: 1.5em;
+    }
+
+    .buildingText h4 {
+        left: 30%;
+        top: 38%;
+        font-size: 1em;
+    }
+
+    .practiceAreaHeader h1 {
+        font-size: 1.5em;
+        top: 30%;
+        left: 30%;
+        transform: translate(20%, -40%);
+    }
+
+    .contactUsContainerTitle p {
+        width: 40%;
+        position: relative;
+        left: 50%;
+    }
+
+    .vision h1 {
+        font-size: 2em;
+    }
+
+    .vision p {
+        padding: 10px;
+        font-size: .9em;
+    }
+
+    form {
+        width: 98%;
+    }
+}
+
+@media (max-width: 930px) {
+    .navIcon {
+        display: block;
+        padding: 2vh 20px;
+        font-size: 2em;
+    }
+
+    .navIcon:hover {
+        background-color: #aca3a3;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 1s ease;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(49, 81, 141, .8);
+    }
+
+    .trans {
+        transform: translateX(0%);
+    }
+
+    nav ul li a {
+        color: #f2f2f2;
+    }
+
+    nav ul li a:hover {
+        color: rgba(49, 81, 141, 1);
+        background-color: #f2f2f2;
+    }
+
+    .buildingText h1 {
+        left: 20%;
+        font-size: 1.5em;
+    }
+
+    .buildingText h4 {
+        left: 20%;
+        top: 38%;
+        font-size: 1em;
+    }
+
+    .attorneys {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .buildingText {
+        width: 100%;
+        background-color: rgba(49, 81, 141, .7);
+        height: 100vh;
+        z-index: 500;
+        position: relative;
+    }
+
+    .buildingText h1 {
+        width: 40%;
+    }
+
+    .buildingText h4 {
+        width: 30%;
+    }
+
+    .practiceArea {
+        display: block;
+        width: 100%;
+
+    }
+
+    .practiceAreaList {
+        width: 100%;
+    }
+
+    .practiceAreaList ul {
+        width: 100%;
+    }
+
+    .practiceAreaHeader h1 {
+        position: relative;
+        top: 0;
+        width: 100%;
+
+        color: rgb(49, 81, 141);
+
+    }
+
+    .practiceAreaHeader h1 span.practice {
+        font-size: 2em;
+    }
+
+    .practiceAreaHeader h1 span.area {
+        font-size: 1.5em;
+    }
+
+    .practiceAreaHeader {
+        position: relative;
+        width: 100%;
+        background-color: rgb(227, 235, 250);
+        padding: 50px;
+        text-align: center;
+    }
+
+    .practiceAreaHeader h1 {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, -0%);
+        width: 100%;
+        color: rgb(49, 81, 141);
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contactUsContainerTitle {
+        width: 40%;
+    }
+
+    .contactUsContainerTitle p {
+        left: 20%;
+        width: 30%;
+    }
+
+    .firstForm {
+        /* padding: 10px 0 10px 30px; */
+        position: relative;
+        width: 100%;
+    }
+
+    .messageText {
+        position: static;
+    }
+
+    .message {
+        position: static;
+    }
+
+    #submit {
+
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .buildingText h1 {
+        left: 20%;
+        top: 40%;
+        width: 50%;
+    }
+
+    .buildingText h4 {
+        left: 20%;
+        top: 40%;
+        transform: translateY(-40%);
+        width: 60%;
+    }
+
+    .attorneys {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .attorney {
+        margin-top: 50px;
+    }
+
+    .attorney:first-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .contactUsContainer {
+        display: block;
+    }
+
+    .contactUsContainerTitle {
+        width: 100%;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .contactUsContainerTitle p {
+        position: static;
+        width: 100%;
+        letter-spacing: 1px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+
+    .address {
+        padding-top: 40px;
+        width: 100%;
+    }
+}

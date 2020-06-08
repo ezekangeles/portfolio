@@ -1,0 +1,906 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+/* !nav */
+
+nav {
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    height: 8vh;
+    z-index: 90000;
+}
+
+nav ul {
+    margin: auto;
+    width: 45em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 8vh;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #b8b8b8;
+}
+
+/* !pizza shop */
+
+.pizzaShop {
+    position: relative;
+    top: 8vh;
+    background-image: url(imgs/jumbotron.jpg);
+    height: 92vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-bottom: 7px solid #000;
+}
+
+.pizzaText {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+
+}
+
+.pizzaText .the {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    margin-bottom: -.5em;
+}
+
+.pizzaText .pizza {
+    font-size: 7em;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.pizzaText .take {
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.pizzaText .order {
+    position: absolute;
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding: 3px 30px;
+    border: 2px solid #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.pizzaText .order:hover {
+    background-color: rgb(216, 211, 211);
+    border-color: rgb(216, 211, 211);
+    transition: .5s ease;
+}
+
+/* !our story */
+
+.ourStoryContainer {
+    position: relative;
+    top: 8vh;
+}
+
+.blackBGText {
+    text-align: center;
+    width: 250px;
+    padding: 10px 70px;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.blackText {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.ourStoryImg {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.ourStoryImg img {
+    width: 100%;
+}
+
+.lorem {
+    line-height: 1.5;
+    color: #7e7a7a;
+}
+
+.pizzaMakingContainer {
+    position: relative;
+    top: 8vh;
+    background-image: url(imgs/pizzaDough.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 7px solid #000;
+}
+
+.seeOurMenu {
+    height: 60vh;
+}
+
+/* !reservations */
+
+.reservationsMainContainer {
+    position: relative;
+    top: 8vh;
+}
+
+.reservation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.reservation .date,
+.reservation .time {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgb(180, 176, 176);
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+
+.bookNow {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+
+.bookNow:hover {
+
+    cursor: pointer;
+    color: #000;
+    background-color: rgb(168, 163, 163);
+}
+
+/* !dropdown */
+.partySize {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid rgb(180, 176, 176);
+}
+
+.partySize p {
+    font-size: 1.3em;
+    padding: 10px 0 10px 5px;
+}
+
+.partySize i {
+    font-size: 1.3em;
+    padding: 20px 5px 0 0;
+}
+
+.caretup {
+    display: none;
+}
+
+.partySize:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 2.8em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgb(180, 176, 176);
+    z-index: 150000;
+    background-color: #f2f2f2;
+}
+
+.dropdown p {
+    display: block;
+    padding: 2px 0;
+    font-size: 1.3em;
+}
+
+.dropdown p:hover {
+    cursor: pointer;
+    background-color: rgb(180, 176, 176);
+}
+
+/* !pizza Picture Menu */
+
+.pizzaContainer {
+    width: 100%;
+
+}
+
+.pizzaMenuPictures {
+    width: 100%;
+    position: relative;
+    top: 8vh;
+    padding-bottom: 100px;
+    border-bottom: 7px solid #000;
+}
+
+.pizzaContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.pizzaContainer img:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.pizzaContainer img {
+    width: 100%
+}
+
+.pizzaHidden {
+    display: none;
+}
+
+.arrow {
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px 0;
+}
+
+.arrowUp {
+    display: none;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+/* !private Events */
+
+.privateEvents {
+    position: relative;
+    top: 8vh;
+    width: 100%;
+}
+
+.privateText {
+    width: 300px;
+}
+
+.privatePar {
+    width: 80%;
+    margin: auto;
+    color: #7e7a7a;
+}
+
+.btnContactUs {
+    padding: 10px 0;
+    border: 1px solid #000;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.btnContactUs:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/* !footer */
+
+.containerFooter {
+    width: 50%;
+    margin: auto;
+}
+
+footer {
+    position: relative;
+    top: 8vh;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.addressMap {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.map {
+    width: 60%;
+}
+
+.socialMedia {
+    width: 40%;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.socialMediaContainer {
+    display: flex;
+}
+
+.socialMediaContainer img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.socialMediaContainer img:hover {
+    cursor: pointer;
+}
+
+.mailing {
+    width: 50%;
+}
+
+.join {
+    font-size: 1.2em;
+}
+
+.type {
+    width: 100%;
+    font-size: .8em;
+    padding: 3px 5px;
+    margin-top: 10px;
+    color: #fff;
+    border: 1px #fff solid;
+    background-color: #000;
+}
+
+.type::-ms-input-placeholder {
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ?order online */
+
+/* !background */
+
+.bgPizza {
+    background-image: url(imgs/jumbotron.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 8vh;
+}
+
+.text {
+    width: 100%;
+}
+
+/* !order */
+
+.orderContainer {
+    position: relative;
+    top: 20vh;
+    width: 100%;
+}
+
+.orderCont {
+    background-color: #fff;
+    margin: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.orderDiv {
+    display: grid;
+    grid-template-columns: 2fr 8fr 3fr;
+    border: 1px solid rgb(172, 169, 169);
+    width: 100%;
+}
+
+.guest {
+    border-right: 1px solid rgb(172, 169, 169);
+    border-left: 1px solid rgb(172, 169, 169);
+}
+
+.orderDiv p {
+    color: #363636;
+}
+
+.orderDiv i {
+    color: #363636;
+}
+
+.guestIcon {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(172, 169, 169);
+    padding: 10px 0;
+    align-items: center;
+}
+
+.guestIcon i {
+    font-size: 1.5em;
+    padding-right: .5em;
+}
+
+.guestIcon:hover {
+    cursor: pointer;
+    background-color: #f2f2f2
+}
+
+.orderMenuLeft {
+    position: relative;
+}
+
+.MenuLeft {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(172, 169, 169);
+    padding: 10px 0;
+    z-index: 7000000000;
+}
+
+.circleArrow {
+    transform: rotateZ(0deg);
+    /* transition: .5s ease; */
+}
+
+.circleArrowAnimation {
+    transform: rotateZ(180deg);
+}
+
+.menuHeight {
+    position: absolute;
+    width: 100%;
+
+    transform: translateY(-100%);
+    display: none;
+    transition: all .5s ease;
+}
+
+.menuHeightTransition {
+    transform: translateY(0%);
+    display: block;
+}
+
+
+.MenuLeft:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.menus {
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+
+.menus:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+/* !mainMenuContainerAntipasti */
+.mainMenuContainerAntipasti {
+    border-right: 1px solid rgb(172, 169, 169);
+
+}
+
+.mainMenuContainerPizza {
+    border-right: 1px solid rgb(172, 169, 169);
+    display: none;
+}
+
+.antipastiContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.antipastiContainer .menuText {
+    font-size: 1.7em;
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+
+.antipastiContainer hr {
+    width: 60%;
+    margin: auto;
+}
+
+.menuSelected {
+    margin: 15px 0 10px 0;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.meaning {
+    margin: 5px 0 50px 0;
+    font-size: 1.2;
+    text-align: center;
+    text-transform: inherit;
+}
+
+.menuDescription {
+    width: 100%;
+    border-bottom: 1px solid rgb(172, 169, 169);
+}
+
+.menuDescription:last-child {
+    border: none;
+}
+
+.menuDescription:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border: none;
+}
+
+.menuDescriptionSub {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.menuAndPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuAndPrice .price {
+    font-size: 1.2em;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+/* !cart */
+
+.myOrder {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(172, 169, 169);
+}
+
+.bagHideShowMainContainer {
+    height: 40vh;
+    border-bottom: 1px solid rgb(172, 169, 169);
+    position: relative;
+}
+
+.bagHideShowContainer {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 90%;
+    text-align: center;
+}
+
+.bagHideShowContainer i {
+    font-size: 5em;
+    padding-bottom: .2em;
+    color: rgb(172, 169, 169);
+}
+
+.subtotal {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 3px solid rgb(172, 169, 169);
+}
+
+.specialRequest {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.specialRequestText {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(172, 169, 169);
+    margin-top: 15px;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.btnOrderNow {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #000;
+    font-size: 1em;
+    border: none;
+    outline: none;
+}
+
+.btnOrderNow:hover {
+    color: #000;
+    background-color: rgb(172, 169, 169);
+    cursor: pointer;
+}
+
+.orderFooter {
+    top: 25vh;
+}
+
+/* !add to cart products */
+
+.menuToCartContainer {
+    opacity: 0;
+    position: fixed;
+    z-index: 90000000000000000;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(187, 184, 184);
+    transition: .7s ease;
+}
+
+.menuToCartContainerTransitionShow {
+    top: 50%;
+    opacity: 1;
+}
+
+.menuToCartContainerTransitionHide {
+    top: 150%;
+    opacity: 0;
+}
+
+.menuToCartContainer .menuToCart {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.menuToCartContainer .menuToCart #menuTitle {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.priceDollarSign {
+    display: flex;
+}
+
+.menuToCartContainer .menuToCart #menuPrice {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.dollarSign {
+    font-size: 1.5em;
+    padding-right: 2px;
+    margin-bottom: 10px;
+}
+
+
+.specialRequestText {
+    margin-top: 5px;
+    padding: 5px 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid #000;
+}
+
+.specialRequestInsertText {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top: 15px;
+    padding: 10px 5px;
+    outline: none;
+    background-color: rgb(235, 231, 231);
+}
+
+.productQuantity {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 10px 0;
+    font-size: 1.5em;
+}
+
+.quantityCount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantityCount i {
+    font-size: .6em;
+}
+
+.quantityCount p {
+    padding: 0 5px;
+}
+
+#addOrder {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #000;
+    font-size: 1em;
+    border: none;
+    outline: none;
+}
+
+#addOrder:hover {
+    color: #000;
+    background-color: rgb(255, 251, 251);
+    cursor: pointer;
+}
+
+.btnClose {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    font-size: 2em;
+}
+
+.minusItem {
+    display: none;
+}
+
+.btnClose:hover {
+    cursor: pointer;
+}
+
+.quantityCount .fas:hover {
+    cursor: pointer;
+}
+
+/* !product added list */
+
+.bagHideShowContainer {
+    /* display: none; */
+}
+
+.addedItems {
+    display: none;
+    width: 100%;
+
+}
+
+.addedItemsContainer {
+    width: 100%;
+}
+
+.itemsAdded {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.orderList {
+    list-style: none;
+    display: flex;
+    padding: 10px 5%;
+    justify-content: space-between;
+}
+
+.quantityXOrder {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderList:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+.addMinusItem {
+    display: flex;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .5s ease;
+}
+
+.addMinusItemTransition {
+    position: static;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.addMinusItem p {
+    padding: 0 2px;
+}
+
+/* !media query */
+
+@media (max-width:1020px) {
+    .pizzaContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .containerFooter {
+        width: 80%;
+    }
+
+    .orderCont {
+        width: 85%;
+    }
+}
+
+@media (max-width:900px) {
+    .orderCont {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+}

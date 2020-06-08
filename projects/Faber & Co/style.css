@@ -1,0 +1,719 @@
+/* !global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.mainContainer {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+
+/* !nav bar */
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li a {
+    color: #283b62;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #5977b3;
+}
+
+.trigram {
+    color: #283b62;
+    font-size: 1.5em;
+    display: block;
+    font-weight: 600;
+    padding: 0 15px;
+    display: none;
+}
+
+.trigram:hover {
+    cursor: pointer;
+    color: #5977b3;
+}
+
+/* !slider */
+
+.jumbotron {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.jumbotron img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* !slider Text */
+.sliderMainContainer {
+    width: 60%;
+    margin: auto;
+    z-index: 5000;
+    position: relative;
+    height: 90vh;
+}
+
+.sliderTextUsContact {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.sliderTextUsContact p {
+    padding: 30px 25px;
+    background-color: rgba(40, 59, 98, .9);
+    color: #f2f2f2;
+}
+
+.sliderTextUs {
+    width: 350px;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: rgba(40, 59, 98, .9);
+    color: #f2f2f2;
+
+}
+
+.sliderTextUs h3 {
+    letter-spacing: 2px;
+    font-size: 2.3em;
+    padding: 30px 20px 10px 20px;
+}
+
+.sliderTextUs p {
+    font-size: 1.1em;
+    padding: 20px 20px 20px 20px;
+}
+
+.sliderTextUs hr {
+    width: 70%;
+    margin: auto;
+}
+
+.sliderTextUs h4 {
+    letter-spacing: 1px;
+    font-size: 2em;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+}
+
+.sliderTextUs .sliderButton {
+    font-size: 1.1em;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    margin: auto;
+    text-transform: uppercase;
+    width: 220px;
+    margin-bottom: 20px;
+
+}
+
+.sliderTextUs .sliderButton:hover {
+    color: rgb(40, 59, 98);
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+/* !Properties */
+
+.latestPropertyMainContainer {
+    position: relative;
+    top: 10vh;
+    padding: 25px 0;
+
+}
+
+.latestPropertyH1 h1 {
+    color: rgb(40, 59, 98);
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* !houses */
+.latestPropertyContainer {
+    display: flex;
+    padding: 50px 0 25px 0;
+    justify-content: space-between;
+
+}
+
+.latestPropertyContainer img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.latestPropertyContainer img:hover {
+    cursor: pointer;
+}
+
+.latestPropertyContainerDiv {
+    width: 32%;
+}
+
+.latestPropertyContainerDiv h3 {
+    padding: 15px 0;
+    font-size: 1.4em;
+    color: rgba(40, 59, 98, .8);
+    letter-spacing: 1px;
+}
+
+.latestPropertyContainerDiv h4 {
+    padding: 0 0 15px 0;
+    font-size: 1.1em;
+    color: rgba(40, 59, 98, .7);
+}
+
+.latestPropertyContainerDiv .bedroom {
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: rgb(147, 168, 117);
+}
+
+.latestPropertyContainerDiv .lorem {
+    padding: 15px 0 50px 0;
+    font-size: 1.1em;
+    color: rgb(139, 141, 137);
+
+}
+
+.latestPropertyContainerDiv .readMore {
+    padding: 10px 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 50%;
+    border: 1px rgba(40, 59, 98, .7) solid;
+    color: rgba(40, 59, 98, .8);
+}
+
+.latestPropertyContainerDiv .readMore:hover {
+    cursor: pointer;
+    background-color: rgba(40, 59, 98, .8);
+    color: #f2f2f2;
+}
+
+.latestRentalPropertyMainContainer {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+}
+
+/* !latest Property */
+.latestRentalPropertyMainContainer h1 {
+    color: rgb(40, 59, 98);
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.chaseAvenueContainerImg img {
+    width: 100%;
+}
+
+.chaseAvenueMainContainer {
+    background-color: rgb(40, 59, 98);
+    padding: 50px 0 10px 0;
+    width: 100%;
+}
+
+.kingsCloseMainContainer {
+    background-color: rgba(40, 59, 98, .9);
+    padding: 10px 0 50px 0;
+    width: 100%;
+}
+
+.chaseAvenueContainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chaseAvenueContainerImg {
+    width: 45%;
+}
+
+.chaseAvenueContainer .texts {
+    width: 55%;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.chaseAvenueContainer .chase {
+    font-size: 1.5em;
+    padding-bottom: 25px;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+}
+
+.texts .bedroom {
+    padding-bottom: 25px;
+    font-size: 1.3em;
+    color: #b6b1b1;
+    letter-spacing: 1px;
+}
+
+.texts .text {
+    color: #9b9696;
+    font-size: 1.1em;
+}
+
+.texts .rent {
+    color: #f2f2f2;
+    font-size: 1.4em;
+    padding-top: 25px;
+}
+
+/* !realtors */
+
+.realtorsMainContainer {
+    position: relative;
+    top: 20vh;
+    padding: 50px 0;
+    width: 60%;
+    margin: auto;
+}
+
+.realtorsMainContainer h1 {
+    color: rgb(40, 59, 98);
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.realtorsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.realtors {
+    width: 30%;
+}
+
+.realtors img {
+    width: 80px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 30px;
+}
+
+.realtors h3 {
+    color: rgb(40, 59, 98);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.realtors p {
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgb(93, 116, 158);
+    font-size: 1.1em;
+}
+
+/* !client think */
+
+.clientThinksMainContainer {
+    background-image: url(imgs/wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    padding: 100px 0;
+}
+
+.clientThinksMainContainer h1 {
+    text-align: center;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    padding: 30px 0;
+}
+
+.clientThink {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: #f3f3f3;
+    padding: 20px 0;
+}
+
+.clientThinkQuote {
+    width: 25%;
+}
+
+.quote {
+    text-align: justify;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+
+.name {
+    text-align: justify;
+    font-size: 1.2em;
+    color: rgb(255, 251, 25);
+    padding-bottom: 15px;
+}
+
+/* !CONTACT US   */
+
+.contactUsMainContainer {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 20vh;
+    padding: 50px 0 100px 0;
+}
+
+.contactUsMainContainer h1 {
+    color: rgb(40, 59, 98);
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contactUsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactUsContainer h2 {
+    color: rgb(40, 59, 98);
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.contactUsContainer p {
+    color: #b6b1b1;
+}
+
+.contactUsAddress {
+    width: 60%;
+
+}
+
+.contactUsForm {
+    width: 35%;
+}
+
+.contactForm {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.contactUsContainer iframe {
+    padding: 15px 0;
+}
+
+.submit {
+    padding: 5px;
+    background: rgb(40, 59, 98);
+    float: right;
+    border: none;
+    width: 30%;
+    color: #f2f2f2;
+}
+
+.submit:hover {
+    background-color: #b6b1b1;
+    cursor: pointer;
+}
+
+/* !speak to us */
+
+.toSpeak {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 20vh;
+    padding: 25px 0 50px 0;
+}
+
+.toSpeak h2 {
+    color: rgb(40, 59, 98);
+    text-transform: uppercase;
+}
+
+.toSpeak .mail {
+    margin-top: 35px;
+}
+
+.toSpeak p {
+    padding: 3px 0;
+}
+
+/* !footer */
+
+footer {
+    background-color: rgb(30, 40, 134);
+    position: relative;
+    top: 20vh;
+}
+
+footer p {
+    padding: 30px 0;
+    color: #f2f2f2;
+}
+
+/* !media query */
+
+@media (max-width: 1120px) {
+
+    .mainContainer,
+    .sliderMainContainer,
+    .chaseAvenueContainer,
+    .realtorsMainContainer,
+    .clientThink,
+    .contactUsMainContainer,
+    .toSpeak {
+        width: 80%;
+    }
+
+
+
+    @media (max-width: 900px) {
+
+        .mainContainer,
+        .sliderMainContainer,
+        .chaseAvenueContainer,
+        .realtorsMainContainer,
+        .clientThink,
+        .contactUsMainContainer,
+        .toSpeak {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        .mainContainer,
+        .sliderMainContainer,
+        .chaseAvenueContainer,
+        .realtorsMainContainer,
+        .clientThink,
+        .contactUsMainContainer,
+        .toSpeak {
+            width: 100%;
+        }
+
+        .chaseAvenueContainer,
+        .contactUsMainContainer,
+        .toSpeak,
+        .latestPropertyContainer,
+        footer {
+            padding: 0 10px;
+        }
+
+
+
+        .jumbotron img {
+            height: 70vh;
+        }
+
+        .sliderTextUs h3 {
+            letter-spacing: 1px;
+            font-size: 1.5em;
+
+        }
+
+        .sliderTextUs p {
+            font-size: .9em;
+        }
+
+        .sliderTextUs hr {
+            width: 70%;
+        }
+
+        .sliderTextUs h4 {
+            font-size: 1.5em;
+        }
+
+        .sliderTextUs .sliderButton {
+            font-size: 1em;
+            padding: 8px 0;
+        }
+
+        .latestPropertyContainerDiv .readMore {
+            padding: 10px 15px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        .latestPropertyContainer,
+        .realtorsContainer,
+        .clientThink,
+        .contactUsContainer {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+
+
+        .chaseAvenueContainerImg img,
+        .realtors,
+        .chaseAvenueContainer,
+        .clientThinkQuote,
+        .contactUsAddress,
+        .contactUsForm,
+        .submit {
+            width: 100%;
+        }
+
+        .clientThinkQuote {
+            margin-bottom: 20px;
+        }
+
+        .contactUsContainer {
+            margin-bottom: 50px;
+        }
+
+        .trigram {
+            display: block;
+        }
+
+
+        nav ul {
+            display: block;
+            position: absolute;
+            top: 10vh;
+            z-index: 5000000;
+            right: 0;
+            width: 100%;
+            transform: translateX(100%);
+            transition: all 1s ease;
+            background-color: rgba(242, 242, 242, .8);
+
+        }
+
+        nav ul li {
+            position: relative;
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        .navigationTransition {
+            transform: translateX(0%);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* !properties */
+        .latestPropertyContainerDiv {
+            width: 100%;
+        }
+
+        .latestPropertyContainerDiv {
+            margin-bottom: 80px;
+        }
+
+        .latestPropertyContainerDiv:nth-child(3) {
+            margin-bottom: 0;
+        }
+
+        .latestPropertyContainerDiv img {
+            height: 350px;
+        }
+
+        .latestPropertyContainerDiv .readMore {
+            padding: 10px 15px;
+            width: 50%;
+            margin: auto;
+        }
+    }
