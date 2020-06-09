@@ -13,13 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let btnNav = document.querySelector('.menuBar');
         let btnNavCounter = true;
         btnNav.addEventListener('click', e => {
+
             let ul = document.querySelector('.navUl');
             if (btnNavCounter === true) {
                 ul.classList.add('navUlTransition');
                 btnNavCounter = false;
+                console.log('eee')
+
             } else {
                 ul.classList.remove('navUlTransition');
                 btnNavCounter = true;
+                console.log('www')
             }
         });
     }
