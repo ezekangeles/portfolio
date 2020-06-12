@@ -147,7 +147,7 @@ body {
     right: 1em;
     padding: 1em;
     border-radius: 10px;
-    transition: .5s;
+    transition: .2s;
     /* transform: translateX(100%); */
     opacity: 0;
 

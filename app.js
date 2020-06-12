@@ -12,21 +12,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let btnNav = document.querySelector('.menuBar');
         let btnNavCounter = true;
+
+
         btnNav.addEventListener('click', e => {
 
             let ul = document.querySelector('.navUl');
             if (btnNavCounter === true) {
                 ul.classList.add('navUlTransition');
                 btnNavCounter = false;
-                console.log('eee')
 
             } else {
                 ul.classList.remove('navUlTransition');
                 btnNavCounter = true;
-                console.log('www')
             }
         });
     }
+
+    // !navbar hide
+
+    let navUl = document.querySelector('.navUl');
+    let navAbout = document.querySelector('.navAbout');
+    let navProject = document.querySelector('.navProject');
+    let navDownload = document.querySelector('.navDownload');
+    let ul = document.querySelector('.navUl');
+
+    navUl.addEventListener('click', e => {
+        if (e.target.className == 'navAbout' || e.target.className == 'navProject' || e.target.className == 'navDownload') {
+            ul.classList.remove('navUlTransition');
+        }
+    })
 
     // !navBar Inside functions
 
