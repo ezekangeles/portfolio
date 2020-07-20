@@ -6,16 +6,14 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #312b69, rgb(71, 88, 240));
+
+    background-image: url(imgs/code.jpg);
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    margin: 100vh;
 }
 
 .container {
-    display: block;
     margin: auto;
-
 
 }
 
@@ -28,7 +26,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 1500px;
+    max-width: 1050px;
+    opacity: 1;
 
 }
 
@@ -144,18 +143,24 @@ body {
     color: #fff;
     background-color: rgb(44, 55, 158);
     top: 1em;
-    right: 1em;
+    right: -10%;
     padding: 1em;
     border-radius: 10px;
-    transition: .2s;
-    /* transform: translateX(100%); */
+    transition: .5s;
+    transform: translateX(0%);
     opacity: 0;
+    visibility: hidden;
+    overflow-x: hidden;
 
 }
 
 .navUlTransition {
-    /* transform: translateX(0%); */
+    transform: translateX(0%);
     opacity: 1;
+    visibility: visible;
+    width: auto;
+    right: 1em;
+
 }
 
 .navDownload a {
